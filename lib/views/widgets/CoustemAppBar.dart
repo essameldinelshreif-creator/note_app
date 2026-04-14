@@ -6,13 +6,19 @@ class CoustemAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
-        SizedBox(height: 100),
-        Text("Notes", style: TextStyle(fontSize: 28)),
-        Spacer(),
-        CoustemSearchicon(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 24),
+      child: Container(
+        height: 60,
+        child: Row(
+          children: const [
+            // SizedBox(height: 100),
+            Text("Notes", style: TextStyle(fontSize: 28)),
+            Spacer(),
+            CoustemSearchicon(),
+          ],
+        ),
+      ),
     );
   }
 }
